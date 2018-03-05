@@ -3,7 +3,7 @@ project 'pdk-runtime' do |proj|
   proj.setting(:runtime_project, "pdk")
   platform = proj.get_platform
 
-  proj.inherit_settings 'pdk', 'git://github.com/puppetlabs/pdk-vanagon', 'master'
+  proj.inherit_settings 'pdk', 'git://github.com/bmjen/pdk-vanagon', 'ruby-2.4'
   proj.version_from_git
   proj.generate_archives true
   proj.generate_packages false
