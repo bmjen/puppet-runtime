@@ -189,7 +189,7 @@ project 'pdk-runtime' do |proj|
     end
 
     proj.component "ruby-multi-augeas" unless platform.is_windows?
-    proj.component "ruby-multi-selinux" if platform.name =~ /^el-(5|6|7)-.*/ || platform.is_fedora?
+    proj.component "ruby-multi-selinux" if platform.is_el? || platform.is_fedora?
     proj.component "ruby-multi-stomp"
   end
 
